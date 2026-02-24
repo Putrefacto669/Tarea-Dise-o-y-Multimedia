@@ -1,0 +1,172 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0a1a2f 0%, #050b18 60%, #02050d 100%);
+    color: #d6f5ff;
+    overflow-x: hidden;
+}
+
+/* NAVBAR OSCURA */
+nav {
+    background: rgba(0, 10, 25, 0.6);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(0,255,255,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    padding: 18px;
+    display: block;
+    color: #8fdfff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00f7ff;
+    text-shadow: 0 0 10px #00f7ff;
+}
+
+/* HERO CINEMATOGRÁFICO */
+.hero {
+    text-align: center;
+    padding: 140px 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow:
+        0 0 10px #00f7ff,
+        0 0 20px #00c3ff,
+        0 0 40px rgba(0,255,255,0.6);
+}
+
+.hero p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #7aaacb;
+}
+
+/* BOTÓN NEÓN */
+.btn {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 12px 35px;
+    border: 2px solid #00f7ff;
+    border-radius: 40px;
+    color: #00f7ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00f7ff;
+    color: #02121f;
+    box-shadow: 0 0 25px #00f7ff;
+}
+
+/* TARJETA ESTILO SOMBRA PROFUNDA */
+.perfil {
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.card {
+    background: rgba(10, 20, 40, 0.8);
+    border: 1px solid rgba(0,255,255,0.1);
+    border-radius: 20px;
+    padding: 35px;
+    width: 280px;
+    margin: auto;
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.8),
+        0 0 30px rgba(0,255,255,0.1);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,1),
+        0 0 40px rgba(0,255,255,0.4);
+}
+
+.card img {
+    border-radius: 50%;
+    width: 110px;
+    margin-bottom: 20px;
+    border: 2px solid #00f7ff;
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+.card h2 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #7aaacb;
+}
+
+/* GALERÍA ATMOSFÉRICA */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 70px;
+    justify-content: center;
+}
+
+.item {
+    width: 200px;
+    height: 120px;
+    background: linear-gradient(135deg, #071424, #0f2a44);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: #8fdfff;
+    transition: 0.4s;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.6);
+}
+
+.item:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 35px #00f7ff;
+}
+
+/* LUZ GRIS AZULADA CINEMÁTICA */
+.cursor-light {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+        rgba(180, 200, 220, 0.25) 0%,
+        rgba(120, 150, 180, 0.15) 30%,
+        rgba(0,0,0,0) 70%);
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+    transition: 0.05s linear;
+}
